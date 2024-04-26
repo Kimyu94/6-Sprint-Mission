@@ -1,0 +1,23 @@
+header {
+  /* height: 70px; */
+  padding: 0 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 9;
+  background: var(--color-white);
+}
+.header_logo .mobile_ver {
+  display: none;
+}
+.login_btn {
+  background: var(--color-blue);
+  width: 128px;
+  height: 48px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-white);
+  border-radius: 8px;
+}
