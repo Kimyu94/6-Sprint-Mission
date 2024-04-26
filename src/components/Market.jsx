@@ -4,7 +4,7 @@ import { getList } from "../api";
 
 const PAGE_SIZE = 10;
 
-function App() {
+function Market() {
   const [orderBy, setOrderBy] = useState("recent");
   const [items, setItems] = useState([]);
 
@@ -33,4 +33,4 @@ function App() {
   );
 }
 
-export default App;
+export default Market;
