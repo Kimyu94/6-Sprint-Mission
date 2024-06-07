@@ -8,7 +8,7 @@ function MarketListItem({ item }) {
   );
 }
 
-function MarketList({ items }) {
+function ItemList({ items }) {
   //items라는 배열을 prop으로 받음
   //map의 콜백함수에서 JSX로 작성한 값을 리턴함
   return (
@@ -24,4 +24,4 @@ function MarketList({ items }) {
   );
 }
 
-export default MarketList;
+export default ItemList;

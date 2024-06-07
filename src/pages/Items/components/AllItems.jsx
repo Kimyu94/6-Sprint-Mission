@@ -1,17 +1,17 @@
-import { useEffect, useState } from "react";
-import MarketList from "./MarketList";
-import { getList } from "../api";
+import { useEffect, useState } from 'react';
+import ItemList from './ItemList';
+import { getList } from '@/api/api';
 
 const PAGE_SIZE = 10;
 
-function Market() {
-  const [orderBy, setOrderBy] = useState("recent");
+function AllItems() {
+  const [orderBy, setOrderBy] = useState('recent');
   const [items, setItems] = useState([]);
 
   const sortedItems = items?.sort((a, b) => b[orderBy] - a[orderBy]);
 
-  const handleNewestClick = () => setOrderBy("recent");
-  const handleBestClick = () => setOrderBy("favorite");
+  const handleNewestClick = () => setOrderBy('recent');
+  const handleBestClick = () => setOrderBy('favorite');
 
   const handleLoad = async (options) => {
     const { list } = await getList(options);
@@ -28,9 +28,9 @@ function Market() {
         <button onClick={handleNewestClick}>최신순</button>
         <button onClick={handleBestClick}>베스트순</button>
       </div>
-      <MarketList items={sortedItems} />
+      <ItemList items={sortedItems} />
     </div>
   );
 }
 
-export default Market;
+export default AllItems;

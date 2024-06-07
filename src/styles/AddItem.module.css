@@ -1,0 +1,49 @@
+.AddItemWrap {
+  padding: 29px 0;
+}
+
+.AddItemTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+button {
+  background: var(--color-gray400);
+  color: var(--color-white);
+  border-radius: 8px;
+  text-align: center;
+  height: 42px;
+  width: 88px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.label {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 24px 0 12px;
+}
+input,
+textarea {
+  width: 100%;
+  font-size: 16px;
+  background: #f3f4f6;
+  padding: 16px 24px;
+  border-radius: 12px;
+}
+input::placeholder,
+textarea::placeholder {
+  color: val(--color-gray400);
+}
+input {
+  height: 56px;
+}
+textarea {
+  height: 200px;
+}
