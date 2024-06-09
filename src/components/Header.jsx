@@ -1,8 +1,8 @@
 import { Link, NavLink } from 'react-router-dom';
-import Logo from '../assets/images/logo.png';
-import LogoMobile from '../assets/images/logo_m.png';
-import Profile from '../assets/images/profile.png';
-import styles from '../styles/Header.module.css';
+import Logo from '@/assets/images/logo.png';
+import LogoMobile from '@/assets/images/logo_m.png';
+import Profile from '@/assets/images/profile.png';
+import styles from '@/styles/Header.module.css';
 
 function getLinkStyle({ isActive }) {
   return {

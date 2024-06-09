@@ -4,7 +4,7 @@ import { getList } from '@/api/api';
 
 const PAGE_SIZE = 10;
 
-function AllItems() {
+function AllItems({ titleClassName }) {
   const [orderBy, setOrderBy] = useState('recent');
   const [items, setItems] = useState([]);
 
@@ -24,6 +24,7 @@ function AllItems() {
 
   return (
     <div>
+      <div className={titleClassName}>전체 상품</div>
       <div>
         <button onClick={handleNewestClick}>최신순</button>
         <button onClick={handleBestClick}>베스트순</button>
