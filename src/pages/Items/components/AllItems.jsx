@@ -1,6 +1,10 @@
 import { useEffect, useState } from 'react';
 import ItemList from './ItemList';
 import { getList } from '@/api/api';
+import styles from '@/styles/AllItems.module.css';
+import Input from '@/components/Input';
+import Button from '@/components/Button';
+import Sort from '@/components/Sort';
 
 const PAGE_SIZE = 10;
 
@@ -23,8 +27,16 @@ function AllItems({ titleClassName }) {
   }, [orderBy]);
 
   return (
-    <div>
-      <div className={titleClassName}>전체 상품</div>
+    <div className={styles.all_items}>
+      <div className={styles.top}>
+        <div className={titleClassName}>판매 중인 상품</div>
+        <div className={styles.right}>
+          <Input placeholder="검색할 상품을 입력해주세요" type="search" />
+          <Button>상품 등록하기</Button>
+          <Sort />
+        </div>
+      </div>
+
       <div>
         <button onClick={handleNewestClick}>최신순</button>
         <button onClick={handleBestClick}>베스트순</button>
