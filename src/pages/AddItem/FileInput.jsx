@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 import { useEffect, useRef, useState } from 'react';
 import ImageAdd from '../../assets/images/ic_plus.png';
+=======
+import { useEffect, useRef, useState } from "react";
+import ImageAdd from "../../assets/images/ic_plus.png";
+>>>>>>> 80e16dd133dfcef5843560c738d0543da835110b
 
 function FileInput({ name, value, onChange }) {
   const [preview, setPreview] = useState();
@@ -14,7 +19,11 @@ function FileInput({ name, value, onChange }) {
     const inputNode = inputRef.current;
     if (!inputNode) return;
 
+<<<<<<< HEAD
     inputNode.value = '';
+=======
+    inputNode.value = "";
+>>>>>>> 80e16dd133dfcef5843560c738d0543da835110b
     onChange(name, null);
   };
 
